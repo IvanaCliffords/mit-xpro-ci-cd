@@ -67,7 +67,9 @@ it("verify data", async (done) => {
   expect(data.body.some((e) => e.name === user3.name)).toBeTruthy();
   done();
 });
-
+it("fail test", () => {
+  expect(false).toBeTruthy;
+});
 afterAll((done) => {
   server.close();
   done();
